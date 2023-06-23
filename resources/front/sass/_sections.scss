@@ -1,0 +1,177 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+main {
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+
+    section {
+        overflow-x: hidden;
+    }
+}
+
+.fs-48 {
+    font-size: 48px;
+    line-height: 58px;
+
+    @media(max-width:992px) {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    @media(max-width:576px) {
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+
+.fs-32 {
+    font-size: 32px;
+    line-height: 39px;
+
+    @media(max-width: 1400px) {
+        font-size: 26px;
+        line-height: 38px;
+    }
+}
+
+.fs-26 {
+    font-size: 24px;
+    line-height: 32px;
+
+    @media(max-width: 576px) {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+.fs-12 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.fs-20 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.fs-22 {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.fs-16 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.fs-14 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.fs-18 {
+    font-size: 18px;
+    line-height: 26px;
+
+    @media(max-width:992px) {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.lt {
+    letter-spacing: 0.15em;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    &::after {
+        content: "";
+    }
+}
+
+.text-decoration-none {
+    &:hover {
+        color: $orange;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-next {
+    z-index: 13;
+}
+
+.btn-outline-orange {
+    color: white !important;
+    padding: 14px 30px;
+}
+
+.btn-orange {
+    color: white !important;
+    //padding: 14px 30px;
+}
+
+.rounded-5-left {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.rounded-5-right {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.rounded-20-left {
+    border-radius: 20px 0px 0px 20px;
+
+    @media(max-width:992px) {
+        border-radius: 20px 20px 0px 0px;
+    }
+}
+
+.rounded-20-right {
+    border-radius: 0px 20px 20px 0px;
+
+    @media(max-width:992px) {
+        border-radius: 0px 0px 20px 20px;
+    }
+}
+
+.rounded-20-top {
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.rounded-20-bottom {
+    border-radius: 0px 0px 20px 20px;
+}
+
+.btn-imoveis {
+    border: 1px solid $primary;
+    background-color: white;
+    color: $primary;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.btn-imoveis-cinza {
+    background-color: $cinza !important;
+}
