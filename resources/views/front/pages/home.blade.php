@@ -253,7 +253,7 @@
         </section>
        <section class="pt-2 overflow-hidden">
             <div class="container position-relative">
-                <div class="row px-xl-2 px-xxl-1 px-1 px-sm-0">
+                <div class="row px-xl-2 px-xxl-2 px-lg-2 overflow-hidden px-2">
                     <div class="w-100 text-center">
                         <h6 class="fs-16 lt text-orange w-100 text-center">INFORMATIVOS</h6>
                         <h2 class="fs-32 fw-700 w-100 text-center mb-4">Últimas notícias</span></h2>
@@ -271,7 +271,7 @@
                                                     <div class="position-absolute bottom-0 start-0 p-1 p-lg-1 p-xl-2 p-xxl-3">
                                                         <button class="mb-lg-0-50 mb-xl-0 btn rounded-36 py-0-25 px-0-50 fs-12 p-700 border-2 btn-orange text-white" >DICAS</button>
                                                         <p class="text-white fs-32 fw-700 mt-1 m-0">5 dicas para você encontrar o imóvel perfeito!</p>
-                                                        <p class="text-white fs-16 fw-400 mt-1">O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. [...]</p>
+                                                        <p class="text-white fs-16 fw-400 mt-1 d-sm-none d-md-block">O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. [...]</p>
                                                     </div>
                                                 </div>
                                             </div>

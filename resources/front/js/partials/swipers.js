@@ -197,7 +197,7 @@ new Swiper(".mobiliados-swiper", {
 });
 new Swiper(".blog-swiper", {
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 60,
     navigation: {
         nextEl: ".blog-swiper .swiper-button-next",
         prevEl: ".blog-swiper .swiper-button-prev",
