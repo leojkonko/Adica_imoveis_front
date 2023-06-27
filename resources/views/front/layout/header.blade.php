@@ -225,11 +225,17 @@
                         </div>
                     </div>
                     <div class="col-12 mt-2">
-                        <div class="d-flex gap-0-50 justify-content-center">
-                            <input type="checkbox" name="" id="offc1" checked>
-                            <label for="offc1">Mobiliado</label>
-                            <input type="checkbox" name="" id="offc2">
-                            <label for="offc2">Semi-mobiliado</label>
+                        <div class="d-flex gap-0-50 justify-content-around">
+                            <div class="d-flex align-items-center">
+                                <input type="checkbox" id="meuCheckbox" class="checkbox-input d-none" checked>
+                            <label for="meuCheckbox" class="checkbox-estilizado me-0-50"></label>
+                            Mobiliado
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <input type="checkbox" id="meuCheckbox2" class="checkbox-input d-none" >
+                            <label for="meuCheckbox2" class="checkbox-estilizado me-0-50"></label>
+                            Semi-mobiliado
+                            </div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center mt-4">

@@ -49,3 +49,45 @@
         margin-top: 80px;
     }
 }
+
+.offc1 {
+    border: 1px solid red;
+
+    &:checked {
+        border: 1px solid gold;
+    }
+}
+
+.checkbox-estilizado {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    /* cor de fundo padrão */
+    border: 2px solid $secondary;
+    border-radius: 50%;
+}
+
+.checkbox-input:checked+.checkbox-estilizado {
+    background-color: $primary;
+    border: 3px solid white;
+    outline: 2px solid $primary;
+    /* cor de fundo quando marcado */
+}
+
+.checkbox-estilizado-footer {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: $primary;
+    /* cor de fundo padrão */
+    border: 2px solid $orange;
+    border-radius: 50%;
+}
+
+.checkbox-input-footer:checked+.checkbox-estilizado-footer {
+    background-color: $orange;
+    border: 3px solid $primary;
+    outline: 2px solid $orange;
+    /* cor de fundo quando marcado */
+}

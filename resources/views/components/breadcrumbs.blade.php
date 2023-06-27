@@ -27,13 +27,17 @@
             <div class="col-12 mt-1">
                 <div class="row">
                     <div class="col-12 col-sm-6 justify-content-center ps-2 d-flex gap-2 align-items-center justify-content-sm-end">
-                        <div>
-                            <input type="checkbox" name="" id="">
-                            <label for="">Mobiliado</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="" id="">
-                            <label for="">Semi-Mobiliado</label>
+                        <div class="d-flex gap-0-50 justify-content-around">
+                            <div class="d-flex align-items-center">
+                                <input type="checkbox" id="meuCheckbox" class="checkbox-input d-none" checked>
+                            <label for="meuCheckbox" class="checkbox-estilizado me-0-50"></label>
+                            Mobiliado
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <input type="checkbox" id="meuCheckbox" class="checkbox-input d-none" >
+                            <label for="meuCheckbox" class="checkbox-estilizado me-0-50"></label>
+                            Semi-mobiliado
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 justify-content-sm-end justify-content-center me-2 d-flex">
@@ -74,13 +78,17 @@
                 </div>
             </div>  
                 <div class="col-12 align-items-center ps-2 d-flex gap-2">
-                    <div>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Mobiliado</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Semi-Mobiliado</label>
+                    <div class="d-flex gap-0-50 justify-content-around">
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" id="meuCheckbox3" class="checkbox-input d-none" checked>
+                            <label for="meuCheckbox3" class="checkbox-estilizado me-0-50"></label>
+                            Mobiliado
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" id="meuCheckbox4" class="checkbox-input d-none" >
+                            <label for="meuCheckbox4" class="checkbox-estilizado me-0-50"></label>
+                            Semi-mobiliado
+                        </div>
                     </div>
                     <button class="btn btn-orange ms-auto me-2 rounded-5 my-1" style="    margin-right: 20px;">
                         Buscar imóvel

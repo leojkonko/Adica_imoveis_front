@@ -83,10 +83,9 @@
                         </button>
                     </div>
                     <div class="d-flex mt-2">
-                        <input class="form-check-input d-none" type="checkbox" value="1" wire:model.defer="accept" id="termosCheck" required>
-                        <label class="form-check-label" for="termosCheck">
-                                
-                        </label>
+                        <input type="checkbox" id="meuCheckbox-footer" class="checkbox-input-footer d-none" checked>
+                        <label for="meuCheckbox-footer" class="checkbox-estilizado-footer me-0-50 mt-0-25"></label>
+                        
                         <p class="text-white">
                             Li e aceito a <a class="text-white text-decoration-none fw-700" href="{{ route_lang('privacy') }}" target="_blank">política de privacidade</a> da {{ env('APP_NAME') }}
                         </p>
