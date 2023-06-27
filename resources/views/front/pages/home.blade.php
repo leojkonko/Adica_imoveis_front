@@ -10,15 +10,15 @@
                     <div class="">
                         <ul class="nav nav-pills" id="pills-tab" role="tablist" data-aos="zoom-out-down">
                             <li class="nav-item nav-item-home" role="presentation">
-                                <button class="nav-link active" style="border-radius: 10px 0px 0px 0px;" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-                                Home
+                                <button class="nav-link active" style="border-radius: 10px 0px 0px 0px;background: white" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                Compra
                                 </button>
                             </li>
                             <li class="nav-item nav-item-home" role="presentation">
                                 <button class="nav-link position-relative" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" 
-                                aria-selected="false" style="border-radius: 0px 10px 0px 0px;">
-                                    <div class="w-100 h-100 position-absolute start-0 bottom-0 z-index-background bg-danger"></div>
-                                    <span class="position-relative opacity-1" style="opacity: 1">Profile</span>
+                                aria-selected="false" style="border-radius: 0px 10px 0px 0px;background: white">
+                                    <div class="w-100 h-100 position-absolute start-0 bottom-0 z-index-background"></div>
+                                    <span class="position-relative opacity-1" style="opacity: 1">Alugel</span>
                                 </button>
                             </li>
                           </ul>
@@ -29,12 +29,12 @@
                                         @foreach (range(0,4) as $banner)
                                         <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
                                             <select name="" id="" class="form-select form-select-cinza my-2">
-                                                <option value="">opção 1</option>
+                                                <option value="">Tipo do imóvel</option>
                                             </select>
                                         </div>
                                         @endforeach
                                         <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                                            <button class="btn btn-orange rounded-5 w-100 my-2 me-2">
+                                            <button class="btn btn-orange rounded-5 w-100 my-2 ms-2 me-2">
                                                 Buscar imóvel
                                             </button>
                                         </div>
@@ -47,7 +47,7 @@
                                         @foreach (range(0,4) as $banner)
                                         <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
                                             <select name="" id="" class="form-select form-select-cinza my-2">
-                                                <option value="">opção 1</option>
+                                                <option value="">Tipo do imóvel</option>
                                             </select>
                                         </div>
                                         @endforeach
@@ -176,7 +176,7 @@
                                     <div class="d-lg-flex">
                                         <div class="col-lg-6">
                                             <div class="bg-cinza rounded-20-left h-100 p-1 p-sm-2">
-                                                <div class="d-flex gap-0-50">
+                                                <div class="d-flex gap-0-50 justify-content-center justify-content-lg-start">
                                                     @foreach (range(0,2) as $o)
                                                         <button class="btn-imoveis btn-imoveis-cinza fs-14 fw-600">
                                                             Casa
@@ -186,20 +186,26 @@
                                                 <h2 class="mt-1 fs-32 fw-700 w-100 text-lg-start text-center">Casa mobiliada no Jardim América</h2>
                                                 <div class="mt-1">
                                                     <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
-                                                        <p class="fs-16 fw-400 text-secondary m-0">
+                                                        <p class="fs-16 fw-400 text-secondary text-lg-start text-center m-0">
                                                             <svg class="me-0-50 mb-0-25" width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <path d="M6 1C3.23935 1 1 3.26405 1 6.05514C1 10.5313 6 15 6 15C6 15 11 10.5313 11 6.05514C11 3.26405 8.76065 1 6 1ZM6 8.23012C4.81057 8.23012 3.84875 7.25769 3.84875 6.05514C3.84875 4.8526 4.81057 3.88017 6 3.88017C7.18943 3.88017 8.15125 4.8526 8.15125 6.05514C8.15125 7.25769 7.18943 8.23012 6 8.23012Z" stroke="#3B3A79" stroke-linejoin="round"/>
                                                             </svg>
                                                             Jardim América 
                                                         </p>                                                     
-                                                        <p class="fs-16 fw-400 text-secondary m-0">
+                                                        <p class="fs-16 fw-400 text-secondary text-lg-start text-center m-0 d-lg-none d-xxl-block">
                                                             <svg class="me-0-50 mb-0-25" width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <path d="M6 1C3.23935 1 1 3.26405 1 6.05514C1 10.5313 6 15 6 15C6 15 11 10.5313 11 6.05514C11 3.26405 8.76065 1 6 1ZM6 8.23012C4.81057 8.23012 3.84875 7.25769 3.84875 6.05514C3.84875 4.8526 4.81057 3.88017 6 3.88017C7.18943 3.88017 8.15125 4.8526 8.15125 6.05514C8.15125 7.25769 7.18943 8.23012 6 8.23012Z" stroke="#3B3A79" stroke-linejoin="round"/>
                                                             </svg>
                                                             Jardim América 
                                                         </p>                                                     
                                                     </div>
-                                                    <div class="d-flex gap-1 mt-0-50 justify-content-center justify-content-lg-start">
+                                                    <p class="fs-16 fw-400 text-secondary text-lg-start text-center m-0 d-lg-block d-xxl-none d-none">
+                                                        <svg class="me-0-50 mb-0-25" width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6 1C3.23935 1 1 3.26405 1 6.05514C1 10.5313 6 15 6 15C6 15 11 10.5313 11 6.05514C11 3.26405 8.76065 1 6 1ZM6 8.23012C4.81057 8.23012 3.84875 7.25769 3.84875 6.05514C3.84875 4.8526 4.81057 3.88017 6 3.88017C7.18943 3.88017 8.15125 4.8526 8.15125 6.05514C8.15125 7.25769 7.18943 8.23012 6 8.23012Z" stroke="#3B3A79" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        Jardim América 
+                                                    </p>
+                                                    <div class="d-flex gap-1 mt-0-50 justify-content-center justify-content-lg-start mt-1">
                                                         @foreach (range(0,3) as $e)
                                                         <p class="fs-16 fw-400 text-secondary m-0">
                                                             <svg class="me-0-25 mb-0-25" width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">

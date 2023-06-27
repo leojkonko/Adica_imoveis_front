@@ -40,8 +40,36 @@
             <div class="container">
                 <div class="row ">
                     <div class="col-lg-7" data-aos="fade-left">
-                        <div class="ratio ratio-16x9 h-100">
-                            <img class="w-100 h-100 object-fit-cover rounded-20" src="{{ asset("front/images/backgrounds/produto-detalhe.png") }}" alt="" title="">
+                        <div class="produtos-detalhes-swiper swiper">
+                            <div class="swiper-wrapper">
+                        
+                                @foreach (range(0,4) as $image)
+                                    <div class="block swiper-slide overflow-hidden" data-aos="zoom-out-up">
+                                        <div class="ratio ratio-16x9 h-100">
+                                            <div class="bottom-0 text-white z-index-2 m-2 bg-dark text-center p-0-50 d-flex align-items-center justify-content-center rounded-1" 
+                                            style="top: initial;width: 80px; height: 30px;opacity: 0.8;"> <span class="opacity: 1;">1 de 6</span> </div>
+                                            <a href="{{ asset("front/images/backgrounds/produto-detalhe.png") }}" data-fancybox="gallery">
+                                                <img class="w-100 h-100 object-fit-cover rounded-20" src="{{ asset("front/images/backgrounds/produto-detalhe.png") }}" alt="" title="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                @endforeach
+                        
+                            </div>
+                            <div class="swiper-button-prev">
+                                <button class="btn bg-white rounded-circle" style="padding: 4px 12px;">
+                                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 1L1 8L8 15" stroke="#00277A" stroke-width="2" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>                                                                            
+                            </div>
+                            <div class="swiper-button-next">
+                                <button class="btn bg-white rounded-circle" style="padding: 4px 12px;">
+                                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 15L8 8L1 1" stroke="#00277A" stroke-width="2" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>                                                                                                                                        
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-5 d-flex align-items-center" data-aos="fade-right">
@@ -110,10 +138,10 @@
                             Uma residência exclusiva, meticulosamente projetada para oferecer o máximo em luxo e conforto. Essa casa de tirar o fôlego possui uma decoração sofisticada, móveis e acabamentos de alta qualidade, além de uma ampla variedade de comodidades e tecnologias modernas. Experimente o requinte e o estilo de vida excepcional neste oásis residencial, projetado para encantar os gostos mais exigentes.
                         </p>
                     </div>
-                    <h2 class="fs-20 fw-700 mt-2">Características</h2>
+                    <h2 class="fs-20 fw-700 mt-2 mb-1">Características</h2>
                     <div class="d-flex gap-1 col-lg-6" >
                         
-                        <div class="col-lg-6" data-aos="fade-left">
+                        <div class="col-lg-6 d-flex align-items-start" data-aos="fade-left">
                             <ul class="">
                                 <li class="fs-16 fw-400 mt-0">Amplo, novo e moderno</li>
                                 <li class="fs-16 fw-400 mt-1">Totalmente mobiliado e equipado</li>
@@ -124,9 +152,9 @@
                                 <li class="fs-16 fw-400 mt-1">Amplo, novo e moderno</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6" data-aos="fade-right">
+                        <div class="col-lg-6 d-flex align-items-start" data-aos="fade-right">
                             <ul class="">
-                                <li class="fs-16 fw-400 mt-2">Amplo, novo e moderno</li>
+                                <li class="fs-16 fw-400 mt-0">Amplo, novo e moderno</li>
                                 <li class="fs-16 fw-400 mt-1">Totalmente mobiliado e equipado</li>
                                 <li class="fs-16 fw-400 mt-1">São 106 m² privativos</li>
                                 <li class="fs-16 fw-400 mt-1">3 dormitórios sendo</li>
@@ -139,14 +167,14 @@
                 </div>
             </div>
         </section>
-<section>
+<section class="bg-cinza">
     <div class="container">
         <div class="row">
-            <div class="mobiliados-swiper swiper p-1">
+            <div class="mobiliados-detalhes-swiper swiper p-1">
                 <div class="swiper-wrapper mb-4">
             
                     @foreach (range(0,4) as $image)
-                    <div class="block swiper-slide overflow-hidden col-lg-4 mb-2" data-aos="zoom-out-up">
+                    <div class="block swiper-slide col-lg-4 mb-2" data-aos="zoom-out-up">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="ratio ratio-16x9 h-100">
@@ -154,14 +182,14 @@
                                 </div>
                             </div>
                             <div class="col-lg-12">
-                                <div class="bg-cinza rounded-20-bottom h-100 p-1 p-sm-2">
+                                <div class="bg-white rounded-20-bottom h-100 p-1 p-sm-2">
                                     <div class="d-flex gap-0-50">
                                         @foreach (range(0,1) as $o)
-                                            <button class="btn-imoveis btn-imoveis-cinza fs-14 fw-600">
+                                            <button class="btn-imoveis btn-imoveis-white fs-14 fw-600">
                                                 Casa
                                             </button>
                                         @endforeach
-                                        <button class="btn-imoveis-secondary">
+                                        <button class="btn-imoveis-secondary btn-imoveis-secondary-white">
                                             #AA001
                                         </button>
                                     </div>

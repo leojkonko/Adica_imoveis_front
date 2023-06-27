@@ -13,9 +13,9 @@ class BlogController extends Controller
     {
         $site
             ->setAlternates('blog')
-            ->pushBreadCrumb('Blog')
-            ->setBreadTitle('Blog')
-            ->setTitle('Blog')
+            ->pushBreadCrumb('Informativos')
+            ->setBreadTitle('Informativos')
+            ->setTitle('Informativos')
             ->setDescriptionIfNotEmpty($blog->getPage()->description)
             ->setKeywordsIfNotEmpty($blog->getPage()->keywords);
 

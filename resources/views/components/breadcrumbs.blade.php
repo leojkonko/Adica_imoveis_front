@@ -5,21 +5,21 @@
     <div class="container position-relative">
         <div class="row d-lg-none bg-cinza rounded-20 p-2">
             @foreach (range(0,4) as $banner)
-                <div class="col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+                <div class="col-md-3 col-sm-4 col-6 d-flex justify-content-center mt-1">
                     <div class="w-100">
                         <p class="fs-16 fw-400">Status do imóvel</p>
-                        <select name="" id="" class="form-select form-select-white my-1">
-                            <option value="">opção 1</option>
+                        <select name="" id="" class="form-select form-select-white my-1 js-example-basic-multiple" name="states[]" multiple="multiple">
+                            <option value="">Selecione um status</option>
                         </select>
                     </div>
                 </div>
             @endforeach
             @foreach (range(0,4) as $banner)
-                    <div class="col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+                    <div class="col-md-3 col-sm-4 col-6 d-flex justify-content-center mt-1">
                         <div class="w-100">
                             <p class="fs-16 fw-400">Status do imóvel</p>
-                            <select name="" id="" class="form-select form-select-white my-1">
-                                <option value="">opção 1</option>
+                            <select name="" id="" class="form-select form-select-white my-1 js-example-basic-multiple" name="states[]" multiple="multiple">
+                                <option value="">Selecione um status</option>
                             </select>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                             <label for="">Semi-Mobiliado</label>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 justify-content-sm-end justify-content-center pe-2 d-flex">
+                    <div class="col-12 col-sm-6 justify-content-sm-end justify-content-center me-2 d-flex">
                         <button class="btn btn-orange rounded-5 my-1">
                             Buscar imóvel
                         </button>
@@ -45,14 +45,14 @@
             </div>
         </div>
         <div class="row bg-cinza rounded-20 m-auto p-1 d-none d-lg-block">
-            <div class="col-lg-12 m-auto">
+            <div class="col-lg-12 m-auto pt-1">
                 <div class="row m-auto">
                     @foreach (range(0,4) as $banner)
                         <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center m-auto p-0">
                             <div class="w-100">
                                 <p class="fs-16 fw-400">Status do imóvel</p>
-                                <select name="" id="" class="form-select form-select-white my-1">
-                                    <option value="">opção 1</option>
+                                <select name="" id="" class="form-select form-select-white my-1 js-example-basic-multiple" name="states[]" multiple="multiple">
+                                    <option value="">Selecione um status</option>
                                 </select>
                             </div>
                         </div>
@@ -60,13 +60,13 @@
                 </div>
             </div>  
             <div class="col-lg-12 m-auto">
-                <div class="row m-auto">
+                <div class="row m-auto pt-1">
                     @foreach (range(0,4) as $banner)
                     <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center m-auto p-0">
                         <div class="w-100">
                             <p class="fs-16 fw-400">Status do imóvel</p>
-                            <select name="" id="" class="form-select form-select-white my-1">
-                                <option value="">opção 1</option>
+                            <select name="" id="" class="form-select form-select-white my-1 js-example-basic-multiple" name="states[]" multiple="multiple">
+                                <option value="">Selecione um status</option>
                             </select>
                         </div>
                     </div>
@@ -82,14 +82,14 @@
                         <input type="checkbox" name="" id="">
                         <label for="">Semi-Mobiliado</label>
                     </div>
-                    <button class="btn btn-orange ms-auto pe-2 rounded-5 my-1">
+                    <button class="btn btn-orange ms-auto me-2 rounded-5 my-1" style="    margin-right: 20px;">
                         Buscar imóvel
                     </button>
                 </div>
         </div>
     </div>
 </section>
-<section class="position-relative bg-white" style="" data-aos="fade-left">
+<section class="position-relative bg-white" style="z-index: 4;" data-aos="fade-left">
     <div class="col-lg-12 position-relative end-0 top-0 d-lg-block" >
         <div class="mt-1" style="">
             <div class="">
@@ -118,14 +118,22 @@
                         @if (Route::is('products'))
                         <div class="col-6 d-flex justify-content-end">
                             <div>
-                                <button class="btn btn-outline-dark">
-                                    <svg class="me-0-50" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8 6L0 6" stroke="#454545" stroke-linejoin="round"/>
-                                        <rect width="14" height="1" fill="#454545"/>
-                                        <path d="M0 11H6V12H0V11Z" fill="#454545"/>
-                                    </svg>                                    
-                                    Ordenar listagem
-                                </button>
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <svg class="me-0-50" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 6L0 6" stroke="#454545" stroke-linejoin="round"/>
+                                            <rect width="14" height="1" fill="#454545"/>
+                                            <path d="M0 11H6V12H0V11Z" fill="#454545"/>
+                                        </svg>                                    
+                                        Ordenar listagem
+                                        <span class="fw-700"> Menor Valor - Maior Valor</span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#">Menor Valor - Maior Valor</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                  </div>
                             </div>
                         </div>
                         @endif
@@ -134,10 +142,6 @@
             </div>
         </div>
     </div>
-</section>
-@elseif(Route::is('blog-details'))
-<section class="position-relative bg-white" style="" data-aos="fade-left">
-    
 </section>
 @else
 <section class="position-relative bg-white" style="" data-aos="fade-left">
@@ -164,7 +168,7 @@
                             @if (Route::is('blog'))
                                 <div class="ms-auto d-flex d-none d-lg-flex">
                                     <div>
-                                        <button class="btn btn-outline-dark">
+                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample2" aria-controls="offcanvasExample2">
                                             <svg class="me-0-50" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M8 6L0 6" stroke="#454545" stroke-linejoin="round"/>
                                                 <rect width="14" height="1" fill="#454545"/>

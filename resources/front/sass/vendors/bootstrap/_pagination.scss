@@ -29,7 +29,7 @@
 .page-link {
     position: relative;
     display: block;
-    padding: 10px 20px;
+    padding: 10px 18px;
     //padding: var(--#{$prefix}pagination-padding-y) var(--#{$prefix}pagination-padding-x);
     @include font-size(var(--#{$prefix}pagination-font-size));
     color: $secondary;

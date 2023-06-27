@@ -1,28 +1,15 @@
 @extends('front.layout.app')
 
 @section('content')
-    <main id="blog" class="overflow-hidden" style="margin-top: 9rem;">
-        <div class="container container-start">
+    <main id="blog" class="overflow-hidden" style="">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-6 position-relative end-0 top-0 d-lg-block" >
-                    <div class="" style="">
-                        <div class="position-breadcrumb">
-                            <div class="container">
-                                <nav aria-label="breadcrumb" class=" flex-column flex-sm-row gap-0-50 align-items-center justify-content-between position-relative z-index-1">
-                                    
-                                        <h1 class="fs-32 fw-700 text-dark mb-0">
-                                            Informativos
-                                        </h1>
-                                    <ol class="breadcrumb d-flex justify-content-start align-items-center">
-                                        <li class="breadcrumb-item active text-secondary" aria-current="">Blog detalhe</li>
-                                        <li class="breadcrumb-item">
-                                            <a class="text-decoration-none text-secondary" href="">Home</a>
-                                        </li>
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
+                <div class="col-lg-10 m-auto">
+                    <div class="ratio ratio-21x9">
+                        <img class="w-100 h-100 object-fit-cover rounded-20" src="{{ asset("front/images/backgrounds/blog-details.png") }}" alt="">
                     </div>
+                </div>
+                <div class="col-lg-10 m-auto position-relative end-0 top-0 d-lg-block" >
                         <div class="pe-lg-4">
                             <h2 class="fs-22 fw-700 w-100 text-lg-start text-center mt-4">Por que imóveis mobiliados estão tão em alta?</h2>
                             <h2 class="fs-20 fw-700 w-100 text-lg-start text-center mt-1">O que é o Lorem Ipsum?</h2>
@@ -58,11 +45,6 @@
                                 </div>
                             </div>
                         </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="ratio ratio-1x1 h-100">
-                        <img class="w-100 h-100 object-fit-cover" src="{{ asset("front/images/backgrounds/blog-details.png") }}" alt="">
-                    </div>
                 </div>
             </div>
         </div>     

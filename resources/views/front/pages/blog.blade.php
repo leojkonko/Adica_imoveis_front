@@ -1,19 +1,23 @@
 @extends('front.layout.app')
 
 @section('content')
+ 
     <main id="blog" class="overflow-hidden pb-2 position-relative">  
         <div class="text-center justify-content-center d-flex w-100 d-lg-none">
             <div>
-                <button class="btn btn-outline-dark">
+                {{--<button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample2" aria-controls="offcanvasExample2">
                     <svg class="me-0-50" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8 6L0 6" stroke="#454545" stroke-linejoin="round"/>
                         <rect width="14" height="1" fill="#454545"/>
                         <path d="M0 11H6V12H0V11Z" fill="#454545"/>
                     </svg>                                    
                     Ordenar listagem
-                </button>
+                </button>--}}
             </div>
-        </div>     
+        </div> 
+          
+          
+          
         {{--<section class="py-2 position-relative z-index-3">
             <div class="container">
                 <div class="row">
@@ -81,7 +85,7 @@
                 </div>
             @endif
         </section>--}}
-<section class="py-2">
+<section class="py-lg-2">
     <div class="container">
         <div class="row">
             @foreach (range(0,4) as $image)

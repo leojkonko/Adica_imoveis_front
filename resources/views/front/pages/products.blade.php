@@ -11,9 +11,11 @@
                         <div class="block swiper-slide overflow-hidden col-lg-4 mb-2" data-aos="zoom-out-up">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <div class="ratio ratio-16x9 h-100">
-                                        <img class="w-100 h-100 object-fit-cover rounded-20-top" src="{{ asset("front/images/backgrounds/mobiliados.png") }}" alt="" title="">
-                                    </div>
+                                    <a href="{{ route_lang('products-details') }}">
+                                        <div class="ratio ratio-16x9 h-100">
+                                            <img class="w-100 h-100 object-fit-cover rounded-20-top" src="{{ asset("front/images/backgrounds/mobiliados.png") }}" alt="" title="">
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="bg-cinza rounded-20-bottom h-100 p-1 p-sm-2">
@@ -84,7 +86,7 @@
                 <div class="row">
                     <div class="col-lg-12 d-flex justify-content-center">
                         <nav aria-label="...">
-                            <ul class="pagination">
+                            <ul class="pagination pt-1">
                               <li class="page-item">
                                 <a class="page-link" href="#">
                                     <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">

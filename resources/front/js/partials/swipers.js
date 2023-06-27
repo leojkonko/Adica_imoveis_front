@@ -220,6 +220,45 @@ new Swiper(".blog-swiper", {
         },
     },
 });
+new Swiper(".mobiliados-detalhes-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 60,
+    navigation: {
+        nextEl: ".mobiliados-detalhes-swiper .swiper-button-next",
+        prevEl: ".mobiliados-detalhes-swiper .swiper-button-prev",
+    },
+    pagination: {
+        el: ".mobiliados-detalhes-swiper .swiper-pagination",
+        type: "bullets",
+        //dynamicBullets: true,
+        clickable: true,
+    },
+    breakpoints: {
+        992: {
+            slidesPerView: 3,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+        0: {
+            slidesPerView: 1,
+        },
+    },
+});
+new Swiper(".produtos-detalhes-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 60,
+    navigation: {
+        nextEl: ".produtos-detalhes-swiper .swiper-button-next",
+        prevEl: ".produtos-detalhes-swiper .swiper-button-prev",
+    },
+    pagination: {
+        el: ".produtos-detalhes-swiper .swiper-pagination",
+        type: "bullets",
+        //dynamicBullets: true,
+        clickable: true,
+    },
+});
 new Swiper(".curiosidades-swiper", {
     slidesPerView: 1,
     spaceBetween: 20,

@@ -16,7 +16,7 @@
                     <div class="col-xl-7 col-lg-6 d-flex align-items-center" data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
-                        <div class="p-lg-2 p-xl-0 py-2 py-lg-3">
+                        <div class=" p-xxl-0 py-2 py-lg-4">
                             <h2 class="fs-20 fw-700 w-100 text-lg-start text-center">Nossa história</h2>
                                 <div class="text-center text-lg-start text-company">
                                     

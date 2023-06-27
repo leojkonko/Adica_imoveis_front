@@ -1,5 +1,5 @@
 
-    <section class="banner ratio ratio-6x9 ratio-md-16x9 ratio-xl-21x9 overflow-hidden">
+    <section class="banner ratio ratio-6x9 ratio-md-16x9 ratio-lg-49 ratio-xxl-21x9 overflow-hidden">
         <div class="banner-swiper">
             <div class="swiper-wrapper">
                 @foreach (range(0,2) as $banner)
@@ -48,14 +48,14 @@
                     <ul class="nav nav-pills" id="pills-tab" role="tablist" data-aos="zoom-out-down">
                         <li class="nav-item nav-item-home" role="presentation">
                             <button class="nav-link active" style="border-radius: 10px 0px 0px 0px;" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-                            Home
+                            Compra
                             </button>
                         </li>
                         <li class="nav-item nav-item-home" role="presentation">
                             <button class="nav-link position-relative" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" 
                             aria-selected="false" style="border-radius: 0px 10px 0px 0px;">
-                                <div class="w-100 h-100 position-absolute start-0 bottom-0 z-index-background bg-danger"></div>
-                                <span class="position-relative opacity-1" style="opacity: 1">Profile</span>
+                                <div class="w-100 h-100 position-absolute start-0 bottom-0 z-index-background"></div>
+                                <span class="position-relative opacity-1" style="opacity: 1">Aluguel</span>
                             </button>
                         </li>
                       </ul>
@@ -66,7 +66,7 @@
                                     @foreach (range(0,4) as $banner)
                                     <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
                                         <select name="" id="" class="form-select form-select-cinza my-1">
-                                            <option value="">opção 1</option>
+                                            <option value="">Tipo do imóvel</option>
                                         </select>
                                     </div>
                                     @endforeach
@@ -84,7 +84,7 @@
                                     @foreach (range(0,4) as $banner)
                                     <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
                                         <select name="" id="" class="form-select my-2">
-                                            <option value="">opção 1</option>
+                                            <option value="">Tipo do imóvel</option>
                                         </select>
                                     </div>
                                     @endforeach
