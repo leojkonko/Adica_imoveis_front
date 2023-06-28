@@ -7,8 +7,8 @@
             @foreach (range(0,4) as $banner)
                 <div class="col-md-3 col-sm-4 col-6 d-flex justify-content-center mt-1">
                     <div class="w-100">
-                        <p class="fs-16 fw-400">Status do imóvel</p>
-                        <select name="" id="" class="form-select form-select-white my-1 js-example-basic-multiple" name="states[]" multiple="multiple">
+                        <p class="fs-16 fw-400 mb-0-50">Status do imóvel</p>
+                        <select name="" id="" class="form-select form-select-white my-1 js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Status do imóvel">
                             <option value="">Selecione um status</option>
                         </select>
                     </div>
@@ -17,9 +17,9 @@
             @foreach (range(0,4) as $banner)
                     <div class="col-md-3 col-sm-4 col-6 d-flex justify-content-center mt-1">
                         <div class="w-100">
-                            <p class="fs-16 fw-400">Status do imóvel</p>
-                            <select name="" id="" class="form-select form-select-white my-1 js-example-basic-multiple" name="states[]" multiple="multiple">
-                                <option value="">Selecione um status</option>
+                            <p class="fs-16 fw-400 mb-0-50">Status do imóvel</p>
+                            <select name="" id="" class="form-select form-select-white my-1 js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Status do imóvel">
+                                <option value="opa">Selecione um status</option>
                             </select>
                         </div>
                     </div>
@@ -54,8 +54,8 @@
                     @foreach (range(0,4) as $banner)
                         <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center m-auto p-0">
                             <div class="w-100">
-                                <p class="fs-16 fw-400">Status do imóvel</p>
-                                <select name="" id="" class="form-select form-select-white my-1 js-example-basic-multiple" name="states[]" multiple="multiple">
+                                <p class="fs-16 fw-400 mb-0-50">Status do imóvel</p>
+                                <select name="" id="" class="form-select form-select-white my-1 js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Status do imóvel">
                                     <option value="">Selecione um status</option>
                                 </select>
                             </div>
@@ -68,8 +68,8 @@
                     @foreach (range(0,4) as $banner)
                     <div class="col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center m-auto p-0">
                         <div class="w-100">
-                            <p class="fs-16 fw-400">Status do imóvel</p>
-                            <select name="" id="" class="form-select form-select-white my-1 js-example-basic-multiple" name="states[]" multiple="multiple">
+                            <p class="fs-16 fw-400 mb-0-50">Status do imóvel</p>
+                            <select name="" id="" class="form-select form-select-white my-1 js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Status do imóvel">
                                 <option value="">Selecione um status</option>
                             </select>
                         </div>
